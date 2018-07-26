@@ -1,0 +1,39 @@
+.mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .7);
+}
+
+.mask img {
+    position: absolute;
+    left: 50%;
+    top: 54%;
+    width: 85%;
+    height: 70%;
+    transform: translate3d(-50%, -50%, 0)
+}
+
+.mask .nextStart {
+    position: absolute;
+    left: 51%;
+    top: 80%;
+    transform: translate3d(-50%, -50%, 0);
+    width: 32%;
+    height: 7%;
+    z-index: 10;
+    opacity: 0;
+}
+
+.close {
+    position: absolute;
+    right: 10%;
+    top: 22.5%;
+    transform: translate3d(-50%, -50%, 0);
+    width: 7%;
+    height: 7%;
+    z-index: 10;
+    opacity: 0;
+}

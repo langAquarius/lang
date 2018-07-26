@@ -1,0 +1,15 @@
+p .choose::after {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    border: 1px solid #666;
+    border-radius: 50%;
+}
+
+.active .choose::before {
+    content: '√';
+    color: lawngreen;
+}

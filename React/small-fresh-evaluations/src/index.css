@@ -1,0 +1,34 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "微软雅黑";
+  text-size-adjust: 100%;
+}
+ul,
+li {
+  list-style: none;
+}
+html,
+body{
+  width: 100%;
+  height: 100%;
+  background: #fff;
+}
+#root {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  width: 100%;
+  height: 50px;
+}
+section {
+  flex: 1;
+  overflow-y:scroll;
+}
+

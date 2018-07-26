@@ -1,0 +1,116 @@
+//所有品牌列表样式
+.car-list {
+    width: 100%;
+    .car-item-list {
+        .initial {
+            font-size: .28rem;
+            font-weight: 500;
+            color: #aaa;
+            text-indent: .3rem;
+            background: #f4f4f4;
+        }
+    }
+    ul {
+        padding-left: .3rem;
+        padding-right: .3rem;
+    }
+    ul li {
+        display: flex;
+        align-items: center;
+        height: 1rem;
+        border-bottom: .02rem solid #ddd;
+        &:last-of-type {
+            border-bottom: none;
+        }
+        img {
+            display: block;
+            width: .8rem;
+            height: .8rem;
+        }
+        span {
+            font-size: .32rem;
+            padding-left: .4rem;
+        }
+    }
+}
+
+//品牌分支列表样式
+.brand-master-list {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 75%;
+    background: #fff;
+    z-index: 100;
+    box-shadow: 0 0 0.5rem #eee;
+    overflow-y: scroll;
+    transform: translate3d(100%, 0, 0);
+    transition: all .2s ease;
+    &.showMaster {
+        transform: translate3d(0, 0, 0);
+        transition: all .2s ease;
+    }
+    .brand-master-item-list {
+        width: 100%;
+        background: #fff;
+        &>p {
+            background: #f2f2f2;
+            text-indent: .3rem;
+            height: .4rem;
+            line-height: .4rem;
+        }
+        p {
+            font-size: .24rem;
+            color: #666;
+        }
+        ul {
+            width: 100%;
+            padding-left: .1rem;
+        }
+        ul li {
+            height: 1.4rem;
+            display: flex;
+            align-items: center;
+            border-bottom: .02rem solid #ddd;
+        }
+        ul li:last-child {
+            border-bottom: 0;
+        }
+        ul li img {
+            height: 88%;
+            padding: 0 .2rem;
+        }
+        ul li p span {
+            display: block;
+            &:first-child {
+                font-size: .34rem;
+                line-height: .34rem;
+                color: #5f687a;
+            }
+            &:last-child {
+                margin-top: .2rem;
+                font-size: .28rem;
+                line-height: .28rem;
+                color: red;
+            }
+        }
+    }
+}
+
+//侧边字母列表样式
+.letter {
+    z-index: 99;
+    position: fixed;
+    right: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    padding-left: .2rem;
+    li {
+        font-size: .24rem;
+        color: #666;
+        font-weight: 500;
+        padding: .02rem .1rem;
+    }
+}

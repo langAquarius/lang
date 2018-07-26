@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>高阶组件之数据视图分离</title>
+    <style>
+        *{
+            list-style: none;
+        }
+    </style>
+    <script src="https://cdn.bootcss.com/react/16.4.0-alpha.0911da3/umd/react.development.js"></script>
+    <script src="https://cdn.bootcss.com/react-dom/16.4.0-alpha.0911da3/umd/react-dom.development.js"></script>
+    <script src="https://cdn.bootcss.com/babel-standalone/7.0.0-beta.3/babel.js"></script>
+    <script src="https://cdn.bootcss.com/axios/0.18.0/axios.js"></script>
+</head>
+<body>
+    <div class="root">
+
+    </div>
+</body>
+    <script type="text/babel">
+        let root=document.querySelector('.root')
+        //创建父的组件
+        class Wrap extends React.Component{
+            constructor(props){
+                super(props)
+                this.state={
+                }
+            }
+            render(){
+                let { data } = this.props
+                return(
+                    <div>
+                        <Verses data={data}></Verses>
+                    </div>
+                )
+            }
+        }
+        //创建子组件
+        class Verses extends React.Component{
+            constructor(props){
+                super(props)
+                this.state={}
+            }
+            render(){ 
+                let { data } = this.props
+                console.log(data)
+                return(
+                    <div>
+                    {   //子组件的渲染
+                        data&&data.map((val,i)=>{
+                            return(
+                                <ul key={i}>
+                                    <h2>{val.name}</h2>
+                                    <h3>{val.writer}</h3>
+                                {
+                                    val.text&&val.text.map((item,k)=>{
+                                        return(
+                                            <li key={k}>{item}</li>
+                                        )
+                                    })
+                                }
+                                </ul>
+                            )
+                        })
+                    }
+                    </div>
+                ) 
+            } 
+        }
+        
+        //定义一个函数用以-->返回数据
+        function dataToProps(){
+            return axios.get('./data.json')
+        }
+        //shuju等于<===>init高阶组件，高阶组件接收数据   (调用返回数据的含数)
+        let shuju = init(dataToProps)//(Wrap)
+        //Wrap父组件复用高阶组件 shuju =>高阶函数
+        let ShujuComponent = shuju(Wrap)
+
+
+
+        //返回装有组件的函数==>高阶组件
+        function init(dataToProps){
+            let dataTo = dataToProps()
+            console.log(dataTo)
+            return function(Jon){
+                return class Datas extends React.Component{
+                    constructor(props){
+                        super(props)
+                        this.state={
+                            data:[]
+                        }
+                    }
+                    componentWillMount(){
+                        dataTo.then(res=>{
+                            this.setState({
+                                data:res.data
+                            })
+                        })
+                    }
+                    render(){
+                        let {data} = this.state
+                        return (
+                            <Jon data={data}></Jon>
+                        )
+                    }
+                }
+            }
+        }
+
+        ReactDOM.render(<ShujuComponent />,root)
+        //需要启服务http-server
+    </script>
+</html>

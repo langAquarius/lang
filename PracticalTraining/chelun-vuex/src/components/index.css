@@ -1,0 +1,28 @@
+@charset "UTF-8";
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background: #FFF;
+}
+
+.wrap {
+    width: 100%;
+    height: 100%;
+}
+
+.box {
+    height: 100%;
+    overflow-y: scroll;
+}

@@ -1,0 +1,82 @@
+.filter {
+  border-top: .15rem solid #f4f4f4;
+  padding: .3rem 0;
+  font-size: .32rem;
+  height: .77rem;
+  line-height: .77rem;
+  background: #fff;
+}
+
+.filter .years span {
+  padding-right: .46rem;
+}
+
+.filter .years span.avtive {
+  color: #00afff;
+}
+
+.filter .info ul {
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  background: #fff;
+}
+
+.filter .info ul li h5 {
+  padding: 0 .2rem;
+  height: .5rem;
+  line-height: .5rem;
+  font-size: .26rem;
+  font-weight: 500;
+  color: #999;
+  background: #f4f4f4;
+}
+
+.filter .info ul li p {
+  width: 100%;
+  height: .8rem;
+  text-align: center;
+  line-height: .8rem;
+  font-size: .32rem;
+  color: #00afff;
+  background: #fff;
+  font-weight: 500;
+  border-top: 1px solid #eee;
+}
+
+.info ul li ol {
+  padding: 0 .2rem;
+  border-bottom: .02rem solid #f4f4f4;
+  overflow: hidden;
+}
+
+.info ul li ol {
+  background: #fff;
+}
+
+.info ul li ol li:first-child {
+  padding: .26rem 0 .18rem;
+  font-size: .3rem;
+  line-height: 1;
+  color: #3d3d3d;
+}
+
+.info ul li ol li:nth-child(2) {
+  color: #bdbdbd;
+  font-size: .26rem;
+  line-height: .26rem;
+}
+
+.info ul li ol li:last-child {
+  text-align: right;
+  padding-bottom: .1rem;
+  font-size: .24rem;
+  line-height: .24rem;
+  color: #818181;
+}
+
+.info ul li ol li:last-child span {
+  font-size: .3rem;
+  color: #ff2336;
+  margin-left: .1rem;
+}
