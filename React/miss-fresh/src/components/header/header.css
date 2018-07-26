@@ -1,0 +1,22 @@
+.header{
+    height: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-bottom:#eee 1px solid;
+}
+.header a{
+    font-size: 14px;
+    color:#333;
+}
+.header a span{
+    font-weight: 800;
+    color: #ff4891;
+
+}
+.header a p{
+    font-size: 12px;
+    transform: scale(.8)
+}

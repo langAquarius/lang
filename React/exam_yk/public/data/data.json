@@ -1,0 +1,38 @@
+[
+    {
+        "id": 0,
+        "url": "/images/img2.png",
+        "title": "紫色的花青素",
+        "describe": "紫薯黑米·健康粗粮的营养补给",
+        "price": 17.9,
+        "count": 0,
+        "ischeck": false
+    },
+    {
+        "id": 1,
+        "url": "/images/img3.png",
+        "title": "美丽要趁枣",
+        "describe": "红枣枸杞·宁夏枸杞搭配吃得到",
+        "price": 15.9,
+        "count": 0,
+        "ischeck": false
+    },
+    {
+        "id": 2,
+        "url": "/images/img4.png",
+        "title": "百搭经典款",
+        "describe": "原味·配什么都好吃的热卖",
+        "price": 15,
+        "count": 0,
+        "ischeck": false
+    },
+    {
+        "id": 3,
+        "url": "/images/img5.png",
+        "title": "专治不开心",
+        "describe": "跳跳糖·蹦蹦跳跳，一口回到小时候",
+        "price": 15.9,
+        "count": 0,
+        "ischeck": false
+    }
+]

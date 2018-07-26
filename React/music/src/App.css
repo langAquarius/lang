@@ -1,0 +1,28 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+html,
+body,
+#root,
+.App {
+  width: 100%;
+  height: 100%;
+  background: #FFF;
+}
+.App {
+  display: flex;
+  flex-direction: column;
+}
+header{
+  height:auto;
+}
+section{
+  flex:1;
+  overflow-y: scroll;
+}

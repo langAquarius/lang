@@ -1,0 +1,52 @@
+.detailed-page {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    overflow-y: scroll;
+    padding-top:50px;
+}
+.detailed-page .header{
+    position: fixed;
+    width: 100%;
+    top:0;
+    left:0;
+    z-index: 10;
+}
+.detailed-page .header a{
+    color:#fff;
+}
+.detailed-box {
+    flex: 1;
+    overflow-y:hidden;
+}
+.detailed-page .play_pause{
+    margin: 20px auto;
+    width: 70%;
+    height: auto;
+    border-radius: 50%;
+    border:30px solid rgba(0,0,0,.75);
+    overflow: hidden;
+}
+.detailed-page .play_pause img{
+    display: block;
+    width: 100%;
+    transform: scale(1.1);
+}
+
+.detailed-page .detailed-box h3,
+.detailed-page .detailed-box p{
+    width: 100%;
+    text-align: center;
+    color:#444;
+}
+.swiper-container{
+    height:70px;
+}
+.swiper-slide {
+    height:70px;
+    text-align: center;
+    line-height: 70px;
+}

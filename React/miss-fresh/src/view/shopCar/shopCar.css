@@ -1,0 +1,56 @@
+dl{
+    display:flex;
+}
+dl dt .check::before {
+    content: '√';
+    width: 15px;
+    height:15px;
+    text-align: center;
+    line-height: 15px;
+    display:inline-block;
+    border:1px solid #333;
+    border-radius: 50%;
+    color:rgba(0, 0, 0, 0);
+} 
+dl dt .checked::before {
+    content: '√';
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    line-height: 15px;
+    display: inline-block;
+    border: 1px solid #333;
+    border-radius: 50%;
+    color: #ff4891;
+}
+dl dt>img{
+    width:102px;
+    height:102px;
+}
+dl dd {
+    position: relative;
+    flex: 1;
+    padding-left: 10px;
+}
+.choose .check-all::before {
+    content: '√';
+    width: 15px;
+    height:15px;
+    text-align: center;
+    line-height: 15px;
+    display:inline-block;
+    border:1px solid #333;
+    border-radius: 50%;
+    color:rgba(0,0,0,0);
+} 
+.choose .checked-all::before {
+    content: '√';
+    width: 15px;
+    height:15px;
+    text-align: center;
+    line-height: 15px;
+    display:inline-block;
+    border:1px solid #333;
+    border-radius: 50%;
+    color:#ff4891;
+}
