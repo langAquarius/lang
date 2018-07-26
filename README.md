@@ -5,10 +5,10 @@
 <h4>通过ssh连接</h4>
     <li>$ ssh-keygen -t rsa -C "yourEmail@yourEmail.com" 可以一路回车新建ssh key</li>
     <li>将ssh可以写入github找到 ssh C:\Users\Administrator.ssh 下面的id_rsa.pub <br>
-        用sublime 打开 复制一下 打开github 登录你的的账户 找到 settings–> SSH and GPG keys -> new SSH keys -> <br>
-        填写title 和 粘贴你已经复制好的 ssh key –> Add SSH key</li>
+        &emsp; &emsp;用sublime 打开 复制一下 打开github 登录你的的账户 找到 settings–> SSH and GPG keys -> new SSH keys -> <br>
+        &emsp;&emsp;填写title 和 粘贴你已经复制好的 ssh key –> Add SSH key</li>
     <li>验证是否连接成功 $ ssh -T git@github.com<br>
-        如果 SSH and GPG keys 里面的钥匙由黑灰色变为了绿色就 说明能够正常连接 否则不能正常连接上github</li>
+        &emsp;&emsp;如果 SSH and GPG keys 里面的钥匙由黑灰色变为了绿色就 说明能够正常连接 否则不能正常连接上github</li>
     
     
 <h4>git日常操作</h4>
