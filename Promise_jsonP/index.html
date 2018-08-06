@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <iframe src="http://m.meilishuo.com/?tabnum=0" frameborder="0"></iframe> -->
+    <script>
+        // //
+        // let script = document.createElement('script')
+        // document.body.appendChild(script)
+        // script.src='http://list.meilishuo.com/search?frame=1&page=1&cKey=wap-index&tag=&maxPrice=&minPrice=&fcid=&_mgjuuid=0dd32b34-98a6-4669-a7e7-6ebe04d44a72&sort=pop&_=1533036393908&callback=jsonp4'
+        // window['jsonp4']=function(res){
+        //     console.log(res)
+        // }
+        
+
+
+        // function jsonp(callbackName,callback,url){
+        //     window[callbackName] = function(data){
+        //         callback(data)
+        //     }
+        //     let script = document.createElement('script')
+        //     document.body.appendChild(script)
+        //     script.src=url
+        // }
+        let url = 'http://list.meilishuo.com/search?frame=1&page=1&cKey=wap-index&tag=&maxPrice=&minPrice=&fcid=&_mgjuuid=0dd32b34-98a6-4669-a7e7-6ebe04d44a72&sort=pop&_=1533036393908&callback=jsonp4'
+        // jsonp('jsop4',function(data){},url)
+
+        function jsonp(callbackName,url){
+            return new Promise((resolve,reject)=>{
+                window[callbackName] = function(data){
+                    resolve(data)
+                }
+                let script = document.createElement('script')
+                document.body.appendChild(script)
+                script.src=url
+            })
+        }
+
+        // jsonp('jsonp4',url).then(res=>{
+        //     console.log(res)
+        // },err=>{
+        //     console.log(err)
+        // })
+
+        
+    </script>
+    <script>
+        new Promise((resolve,reject)=>{
+            resolve(1)
+        }).then(res=>{
+            console.log(res)
+            return new Promise((resolve,reject)=>{
+                resolve(2)
+            })
+        }).then(res=>{
+            console.log(res)
+            return new Promise((resolve,reject)=>{
+                try{
+                    reject('catch')
+                }catch(err){
+                    console.log(err)
+                }
+            })
+        }).then(res=>{
+            console.log(res)
+            return new Promise((resolve,reject)=>{
+                resolve(4)
+            })
+        }).then(res=>{
+            console.log(res)
+        }).catch(err=>{
+            console.log(err)
+        })
+
+
+        
+    </script>
+</body>
+</html>
