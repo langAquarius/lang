@@ -1,0 +1,15 @@
+.page-wrap {
+    background-color: red
+}
+
+.page {}
+
+.page ul li {
+    float: left;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.page ul li.act {
+    color: #fff;
+}

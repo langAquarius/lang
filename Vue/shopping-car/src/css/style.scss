@@ -1,0 +1,230 @@
+@charset "UTF-8";
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-size: .14rem;
+    font-weight: 400;
+    font-style: normal;
+    font-family: "微软雅黑";
+    text-size-adjust: 100%;
+}
+
+body {
+    min-width: 320px;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+html {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    user-select: none;
+    font-size: 625%;
+}
+
+img,
+div,
+body,
+html,
+ul,
+li,
+a {
+    -webkit-touch-callout: none;
+}
+
+input,
+button {
+    outline: 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: #fff;
+}
+
+html,
+body,
+#app {
+    width: 100%;
+    height: 100%;
+    background: #FFF;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    height: .5rem;
+    display: flex;
+    justify-content: space-between;
+    padding-left: .2rem;
+    padding-right: .2rem;
+    border-bottom: .01rem solid #ccc;
+    a {
+        line-height: .5rem;
+        text-align: center;
+    }
+}
+
+.section-wrap {
+    flex: 1;
+    overflow-y: scroll;
+    .morck-wrap {
+        display: none;
+        width: 80%;
+        height: .4rem;
+        line-height: .4rem;
+        text-align: center;
+        position: fixed;
+        bottom: .6rem;
+        left: 50%;
+        transform: translate3d(-50%, 0, 0);
+        background: rgba(0, 0, 0, .6);
+        border-radius: .4rem;
+        div {
+            color: #fff;
+        }
+        &.shows {
+            display: block;
+        }
+    }
+}
+
+.info {
+    display: flex;
+    padding: .2rem;
+    align-items: center;
+    border-bottom: .06rem solid lightcoral;
+}
+
+.products {
+    padding-left: .2rem;
+    padding-right: .2rem;
+    h3 {
+        line-height: .45rem;
+        font-size: .18rem;
+    }
+    dl {
+        display: flex;
+        padding-top: .2rem;
+        dt {
+            width: 40%;
+            img {
+                width: 100%;
+            }
+        }
+        dd {
+            padding-left: .2rem;
+            .text {
+                display: flex;
+                justify-content: space-between;
+                span {
+                    display: block;
+                }
+                .univalent {
+                    color: red;
+                    font-weight: 800;
+                }
+                .originalPrice {
+                    color: #999;
+                    transform: scale(.9);
+                    text-decoration: line-through;
+                }
+            }
+            .Number {
+                width: .9rem;
+                height: .36rem;
+                border: .01rem solid #666;
+                border-radius: .05rem;
+                display: flex;
+                span {
+                    flex: 1;
+                    height: .35rem;
+                    text-align: center;
+                    line-height: .35rem;
+                    &:nth-of-type(2) {
+                        border-left: .01rem solid #666;
+                        border-right: .01rem solid #666;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.price-box {
+    padding-top: .2rem;
+    // padding-left: .2rem;
+    // padding-right: .2rem;
+    p {
+        display: flex;
+        justify-content: space-between;
+        b {
+            color: red;
+            font-weight: 800;
+        }
+    }
+}
+
+.pay {
+    padding-top: .2rem;
+    padding-left: .2rem;
+    padding-right: .2rem;
+    div {
+        display: flex;
+        justify-content: space-between;
+        height: .4rem;
+        align-items: center;
+    }
+    .payment {
+        width: .5rem;
+        height: .25rem;
+        border-radius: .5rem;
+        border: .01rem solid #999;
+        transition: .5s all;
+        &.show {
+            text-align: right;
+            background: lightcoral;
+        }
+        span {
+            width: .23rem;
+            height: .23rem;
+            background: #fff;
+            display: inline-block;
+            border-radius: 50%;
+            box-shadow: .02rem .02rem .05rem #999;
+        }
+    }
+}
+
+.footer-wrap {
+    height: .5rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    p {
+        text-align: center;
+        padding-left: .2rem;
+        padding-right: .2rem;
+    }
+    button {
+        border: 0;
+        padding-left: .2rem;
+        padding-right: .2rem;
+        height: .5rem;
+        background: red;
+        color: #FFF;
+        font-size: .16rem;
+    }
+}

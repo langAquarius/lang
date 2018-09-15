@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no">
+</head>
+
+<body>
+    <div id="app">
+        <wrap></wrap>
+        <headers></headers>
+    </div>
+    <div id="contents" type="text/template" style="display: none">
+        <main>
+            this is wrap :{{val1}}
+            <br>
+            <input type="text" v-model="val1">
+            <button type="button" @click="share">分享</button>
+        </main>
+    </div>
+    <div id="header" type="text/template" style="display: none">
+        <p>
+            this is header: {{val2}}
+        </p>
+    </div>
+    <script src="vue.js"></script>
+    <script>
+    let eventBus = new Vue();
+    new Vue({
+        el: "#app",
+
+        components: {
+
+            wrap: {
+                name: "contents",
+                template: contents,
+                data() {
+                    return {
+                        val1: null
+                    }
+                },
+                methods: {
+                    share() {
+                        eventBus.$emit("update", this.val1);
+                    }
+                }
+            },
+            headers: {
+                name: "headers",
+                template: header,
+                data() {
+                    return {
+                        val2: "default"
+                    }
+                },
+                mounted() {
+                    eventBus.$on("update", (data) => {
+                    
+                        this.val2 = data;
+                    });
+                }
+            }
+        }
+    });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app">
+        <router-view></router-view>
+    </div>
+</body>
+<script src="https://cdn.bootcss.com/vue/2.5.17-beta.0/vue.js"></script>
+<script src="https://cdn.bootcss.com/vue-router/3.0.1/vue-router.js"></script>
+
+<script>
+    let router = new VueRouter({
+        routes: [{
+            path: '/home',
+            component: {
+                template: `<div><h1>home</h1><router-view></router-view></div>`
+            },
+            children: [{
+                path: 'news1',
+                component: {
+                    template: `<div><h3>page1</h3><router-view></router-view></div>`
+                }
+            }, {
+                path: 'news2',
+                component: {
+                    template: `<div><h3>page2</h3></div>`
+                }
+            }]
+        }, {
+            path: '/list',
+            component: {
+                template: `<h1>list</h1>`
+            }
+        }]
+    })
+    new Vue({
+        el: '#app',
+        router: router,
+        data: {
+            msg: "hellow"
+        },
+        created() {
+
+        },
+        methods: {
+
+        }
+    })
+</script>
+
+</html>

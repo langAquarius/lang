@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no">
+    <style type="text/css">
+        img {
+            display: inline-block;
+            width: 300px;
+            height: 250px;
+        }
+    </style>
+</head>
+
+<body>
+    <script type="text/javascript" src="./js/index.js"></script>
+    <script type="text/javascript">
+        ajax("GET", "http://localhost:8090/data").then(result => {
+            let imagesUrl = JSON.parse(result);
+            imagesUrl.map((item, index) => {
+                loadImageAsync(item).then((img) => {
+                    document.body.append(img);
+                });;
+            });
+        }, error => {
+            console.log(error);
+        });
+    </script>
+</body>
+
+</html>

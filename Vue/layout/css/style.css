@@ -1,0 +1,29 @@
+body {
+    font-size: .12rem;
+}
+
+.wrap {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #ccc;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column
+}
+
+.header {
+    height: 45px;
+    background-color: #dec
+}
+
+.content {
+	flex: 1;
+    -webkit-flex: 1;
+}
+
+.footer {
+    height: 45px;
+    background-color: #dec
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div type="text/template" id="header" style="display:none">
+        <header>{{msg}}<br><input type='number ' v-model='num1'></input>+<br><input type='number ' v-model='num2'></input><br>自动计算：{{add}}<br><button @click='go'>=</button>{{sum}}</header>
+    </div>
+    <div id="app">
+        <headers></headers>
+        <ul>
+            <li>
+                <router-link to="/tab1"> 标题1</router-link>
+            </li>
+            <li>
+                <router-link to="/tab2"> 标题2</router-link>
+            </li>
+        </ul>
+        <router-view></router-view>
+    </div>
+
+</body>
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+<script>
+    //创建斌那个定义一个路由；
+    let routes = [{
+        //路由路径
+        path: "/tab1",
+        component: {
+            //组件名称
+            name: "tab1",
+            //模板//只能有一个标签，里面可以嵌套标签
+            template: `<div>1111111111111111111111111111111111111111111111111111</div>`
+        }
+    }, {
+        path: "/tab2",
+        component: {
+            name: "tab2",
+            template: `<div>2222222222222222222222222222222222222222222222222222222222</div>`
+        }
+
+    }];
+    //创建router实例
+    let router = new VueRouter({
+        routes
+
+    });
+    //实例Vue
+    new Vue({
+        el: "#app",
+        //ES6语法调用上面的router
+        router,
+        //定义一个局部组件components====》//全局组件为component
+        components: {
+            headers: {
+                name: "headers",
+                template: header,
+                data() {
+                    return {
+                        msg: "标题headers",
+                        num1: null,
+                        num2: null,
+                        sum: 0
+                    }
+                },
+                computed: {
+                    add() {
+                        return this.num1 + this.num2;
+                    }
+                },
+                //事件
+                methods: {
+                    go() {
+                        this.sum = this.num1 + this.num2;
+                        //alert(this.sum)
+                    }
+
+                }
+            },
+            footers: {
+                name: "footers",
+                template: "<footer>{{msg}}<br>{{fun}}<br><button @click='to'>点我</button></footer>",
+                data() {
+                    return {
+                        msg: "页脚footer"
+                    }
+                },
+                //钩子函数
+                mounted() {
+                    this.to()
+                },
+                //计算属性
+                computed: { //类似data
+                    fun() {
+                        return "I'm a function"
+                    }
+                },
+                //事件
+                methods: {
+                    to() {
+                        console.log("go to")
+                    }
+                }
+            },
+
+        }
+    })
+</script>
+
+</html>

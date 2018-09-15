@@ -1,0 +1,44 @@
+.headers {
+    padding: 15px;
+    line-height: 30px;
+    color: #eee;
+    background: #242f42
+}
+
+
+.wrap {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    font-size: .12rem;
+    overflow: hidden;
+}
+
+.left {
+    padding-bottom: 5000px;
+    margin-bottom: -5000px;
+    overflow: hidden;
+    background-color: #324157
+}
+
+.right {}
+
+.list {
+    background-color: #324157
+}
+
+.list .el-tree {
+    color: #ccc;
+    font-size: 16px;
+    background-color: #324157;
+}
+
+.breadcrumb {
+    margin: 15px;
+    padding: 8px 15px;
+    list-style: none;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    text-align: left
+}

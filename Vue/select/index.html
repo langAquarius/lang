@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="format-detection" content="telphone=no, email=no,address=no">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+
+<body>
+    <ul class="dropdown show">
+        <li>世界 你好</li>
+        <li class="btn">更多
+            <ol class="dropdown-menu">
+                <li class="dropdown-item">111</li>
+                <li class="dropdown-item">222</li>
+                <li class="dropdown-item">333</li>
+                <li class="dropdown-item">444</li>
+                <li class="dropdown-item">555</li>
+            </ol>
+        </li>
+    </ul>
+</body>
+<!-- <script src="./js/bootstrap.min.js"></script> -->
+<script>
+    class Select {
+        constructor(opt) {
+            this.btn = document.querySelector('.btn');
+            this.menu = document.querySelector('.dropdown-menu');
+            this.lis = this.menu.querySelectorAll('li');
+            this.flag = true
+            console.log(this.btn);
+            this.init()
+        }
+        init() {
+            this.selectOpen()
+        }
+        selectOpen() {
+            this.btn.onclick = () => {
+                if (this.flag) {
+                    this.menu.style = "display:block"
+                    this.flag = false
+                } else {
+                    this.menu.style = "display:none"
+                    this.flag = true
+                }
+                [...this.lis].map((item, ind) => {
+                    item.onclick = (e) => {
+                        e.stopPropagation();
+                        this.menu.style = "display:none";
+                        this.flag = true;
+                    }
+                })
+
+            }
+        }
+    }
+    new Select()
+</script>
+
+</html>

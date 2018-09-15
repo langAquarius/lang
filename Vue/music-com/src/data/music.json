@@ -1,0 +1,136 @@
+﻿{
+    "pageOne": [{
+        "recommend-sg": [
+            { "tit": "推荐歌单" },
+            {
+                "pic": "./src/images/pic1.png",
+                "remd_text ": "致暗恋：陪伴是最怂的告白"
+            }, {
+                "pic": "./src/images/pic2.png",
+                "remd_text ": "「古风」错身遇个你，穷尽诗家笔"
+            }, {
+                "pic": "./src/images/pic3.png",
+                "remd_text ": "寒假都快结束了，暑假为什么不接上？"
+            }, {
+                "pic": "./src/images/pic4.png",
+                "remd_text ": "「女声控」音色沁人心 旋律美如画"
+            }, {
+                "pic": "./src/images/pic5.png",
+                "remd_text ": "東方钢琴祭：幻梦终醒 本无不散之宴"
+            }, {
+                "pic": "./src/images/pic6.png",
+                "remd_text ": "♪V家歌姬唱英文的时候♪"
+            }
+        ],
+        "newmusic-sg": [
+            { "tit": "最新音乐" },
+            {
+                "sg_name": "Super Love",
+                "sg_info ": "魏巡 Super Love",
+                "sg_hot": "SQ"
+            }, {
+                "sg_name": "Super Love",
+                "sg_info ": "魏巡 Super Love",
+                "sg_hot": "SQ"
+            }, {
+                "sg_name": "Super Love",
+                "sg_info ": "魏巡 Super Love",
+                "sg_hot": "SQ"
+            }, {
+                "sg_name": "Super Love",
+                "sg_info ": "魏巡 Super Love",
+                "sg_hot": "SQ"
+            }, {
+                "sg_name": "Super Love",
+                "sg_info ": "魏巡 Super Love",
+                "sg_hot": "SQ"
+            }, {
+                "sg_name": "Super Love",
+                "sg_info ": "魏巡 Super Love",
+                "sg_hot": "SQ"
+            }, {
+                "sg_name": "Super Love",
+                "sg_info ": "魏巡 Super Love",
+                "sg_hot": "SQ"
+            }, {
+                "sg_name": "Super Love",
+                "sg_info ": "魏巡 Super Love",
+                "sg_hot": "SQ"
+            }, {
+                "sg_name": "Super Love",
+                "sg_info ": "魏巡 Super Love",
+                "sg_hot": "SQ"
+            }, {
+                "sg_name": "Super Love",
+                "sg_info ": "魏巡 Super Love",
+                "sg_hot": "SQ"
+            }, {
+                "sg_name": "Super Love",
+                "sg_info ": "魏巡 Super Love",
+                "sg_hot": "SQ"
+            }, {
+                "sg_name": "Super Love",
+                "sg_info ": "魏巡 Super Love",
+                "sg_hot": "SQ"
+            }
+        ]
+    }],
+    "pageTow": [{
+            "banner": [
+                "./img/1.jpg",
+                "./img/2.jpg",
+                "./img/3.jpg"
+            ],
+            "music_lis": [{
+                "sg_name": "Super Love",
+                "sg_info ": "魏巡 Super Love",
+                "sg_hot": "SQ"
+            }, {
+                "sg_name": "Super Love",
+                "sg_info ": "魏巡 Super Love",
+                "sg_hot": "SQ"
+            }, {
+                "sg_name": "Super Love",
+                "sg_info ": "魏巡 Super Love",
+                "sg_hot": "SQ"
+            }, {
+                "sg_name": "Super Love",
+                "sg_info ": "魏巡 Super Love",
+                "sg_hot": "SQ"
+            }, {
+                "sg_name": "Super Love",
+                "sg_info ": "魏巡 Super Love",
+                "sg_hot": "SQ"
+            }, {
+                "sg_name": "Super Love",
+                "sg_info ": "魏巡 Super Love",
+                "sg_hot": "SQ"
+            }, {
+                "sg_name": "Super Love",
+                "sg_info ": "魏巡 Super Love",
+                "sg_hot": "SQ"
+            }, {
+                "sg_name": "Super Love",
+                "sg_info ": "魏巡 Super Love",
+                "sg_hot": "SQ"
+            }, {
+                "sg_name": "Super Love",
+                "sg_info ": "魏巡 Super Love",
+                "sg_hot": "SQ"
+            }, {
+                "sg_name": "Super Love",
+                "sg_info ": "魏巡 Super Love",
+                "sg_hot": "SQ"
+            }, {
+                "sg_name": "Super Love",
+                "sg_info ": "魏巡 Super Love",
+                "sg_hot": "SQ"
+            }, {
+                "sg_name": "Super Love",
+                "sg_info ": "魏巡 Super Love",
+                "sg_hot": "SQ"
+            }]
+        }
+
+    ]
+}

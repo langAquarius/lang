@@ -1,0 +1,85 @@
+[{
+    "name": "Grain",
+    "content": [{
+        "name": "小麦",
+        "SugarContent": "48"
+    }, {
+        "name": "大麦",
+        "SugarContent": "42"
+    }, {
+        "name": "大米",
+        "SugarContent": "50"
+    }]
+}, {
+    "name": "Vegetables",
+    "content": [{
+        "name": "油菜",
+        "SugarContent": "48"
+    }, {
+        "name": "大麦",
+        "SugarContent": "42"
+    }, {
+        "name": "大米",
+        "SugarContent": "50"
+    }]
+}, {
+    "name": "Fruits",
+    "content": [{
+        "name": "香蕉",
+        "SugarContent": "48"
+    }, {
+        "name": "大麦",
+        "SugarContent": "42"
+    }, {
+        "name": "大米",
+        "SugarContent": "50"
+    }]
+}, {
+    "name": "MeatEggs",
+    "content": [{
+        "name": "牛肉",
+        "SugarContent": "48"
+    }, {
+        "name": "大麦",
+        "SugarContent": "42"
+    }, {
+        "name": "大米",
+        "SugarContent": "50"
+    }]
+}, {
+    "name": "Soybean",
+    "content": [{
+        "name": "大豆",
+        "SugarContent": "48"
+    }, {
+        "name": "大麦",
+        "SugarContent": "42"
+    }, {
+        "name": "大米",
+        "SugarContent": "50"
+    }]
+}, {
+    "name": "Milk",
+    "content": [{
+        "name": "牛奶",
+        "SugarContent": "48"
+    }, {
+        "name": "大麦",
+        "SugarContent": "42"
+    }, {
+        "name": "大米",
+        "SugarContent": "50"
+    }]
+}, {
+    "name": "Dessert",
+    "content": [{
+        "name": "曲奇饼",
+        "SugarContent": "48"
+    }, {
+        "name": "大麦",
+        "SugarContent": "42"
+    }, {
+        "name": "大米",
+        "SugarContent": "50"
+    }]
+}]
