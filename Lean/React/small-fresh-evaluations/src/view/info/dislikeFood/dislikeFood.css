@@ -1,0 +1,65 @@
+.infoPage,
+.dislikeBox {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.dislikeBox h2 {
+    text-align: center;
+    line-height: 45px;
+    font-size: 18px;
+    font-weight: 800;
+}
+.dislikeFood {
+    position: relative;
+    left: 50%;
+    transform: translate3d(-50%, 0, 0);
+    width: 85%;
+    height: auto;
+    border: 1px solid lightsalmon;
+    display:flex;
+    flex-wrap:wrap;
+    padding-right: 50px;
+}
+.dislikeFood li::before{
+    position: relative;
+    left: -18px;
+    top:15px;
+    content: '';
+    display: block;
+    width:12px;
+    height:12px;
+    border:1px solid #333;
+}
+.dislikeFood li {
+    position: relative;
+    width:50%;
+    height:35px;
+    align-items: center;
+    padding-left: 70px;
+    font-weight: 600;
+}
+.dislikeBox .nextStart {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate3d(-50%, 0, 0);
+    width: 30%;
+    height: 7%;
+    z-index: 11;
+    opacity: 1;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    background: lightsalmon;
+    border-radius: 8px;
+}
+
+.dislikeBox .chooseBg::after {
+    position: absolute;
+    left: 54px;
+    top: 14px;
+    content: '√';
+    color:#000;
+}

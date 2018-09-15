@@ -1,0 +1,74 @@
+@charset "UTF-8";
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-size: .14rem;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "微软雅黑";
+  text-size-adjust: 100%;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+html {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+  font-size: 625%;
+}
+
+
+header {
+  height: .4rem;
+  color: #fff;
+  background: #1B1A1E;
+  display: flex;
+  text-align: center;
+  line-height: .4rem;
+}
+
+.span {
+  flex-basis: .6rem;
+}
+
+header .mid {
+  flex: 1;
+}
+.tit {
+  height: .4rem;
+  color: #666;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 .1rem;
+}
+
+.tit i {
+  font-size: .18rem;
+}
+.illness .activeClass {
+  background: skyblue;
+}
+.info .activeClass {
+  background:skyblue;
+}
+.food .activeClass {
+  background: skyblue;
+}
+.sure {
+  width: 80px;
+  color: red;
+  display: block;
+  border-radius: 10px;
+  text-align: center;
+  background: #FFC73E;
+  padding: 5px 10px;
+  margin: 30px auto 0;
+}

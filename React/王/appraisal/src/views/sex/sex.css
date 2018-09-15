@@ -1,0 +1,34 @@
+.mark {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .7)
+}
+
+.dialog {
+    width: 80%;
+    height: 70%;
+    padding: 0 .3rem;
+    border-radius: 5px;
+    background: url('../../static/3.gif') no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate3d(-50%, -45%, 0);
+}
+
+.dialog p {
+    line-height: 1.5;
+    color: #666;
+}
+
+.dialog span {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    width: 100px;
+    height: 40px;
+    transform: translateX(-50%)
+}

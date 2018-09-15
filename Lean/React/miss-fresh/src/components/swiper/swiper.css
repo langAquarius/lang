@@ -1,0 +1,13 @@
+.swiper-slide img{
+    width: 100%;
+}
+.swiper-pagination-fraction,
+.swiper-pagination-custom,
+.swiper-container-horizontal>.swiper-pagination-bullets {
+    transform: scale(.7);
+    bottom: 10px;
+    left:calc(100% - 50px);
+    width: 40px;
+    background: rgba(255, 255, 255, .5);
+    border-radius: 25px;
+}

@@ -1,0 +1,24 @@
+.left{
+    width:20%;
+    height: 100%;
+    background:#2B3146; 
+}
+.left a{
+    color:#555B6E;
+}
+.ant-menu-inline .ant-menu-item,
+.ant-menu-inline .ant-menu-submenu-title {
+    width:100%;
+}
+.ant-menu-submenu-active,
+.ant-menu-submenu-open {
+    color: #fff;
+}
+.ant-menu-sub.ant-menu-inline ,
+.ant-menu-sub.ant-menu-inline>.ant-menu-item {
+    background: #2B3146;
+}
+.ant-menu-item-selected {
+    background: #00B987;
+    color:#fff;
+}

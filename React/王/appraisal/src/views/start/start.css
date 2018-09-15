@@ -1,0 +1,17 @@
+.start p {
+    width: 100%;
+    position: relative;
+}
+
+.start p a {
+    position: absolute;
+    width: 35%;
+    height: 40px;
+    left: 50%;
+    bottom: 13%;
+    transform: translateX(-50%)
+}
+
+.start p img {
+    width: 100%;
+}

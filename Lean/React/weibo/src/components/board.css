@@ -1,0 +1,37 @@
+.board{
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top:20px;
+}
+.board textarea{
+    display: block;
+    width: 100%;
+    height:100px;
+}
+.content{
+    width: 100%;
+}
+.content li{
+    width: 50%;
+    line-height: 25px;
+    font-size: 12px;
+    color:#222;
+     margin-left: 1px;
+     padding-left: 50px;
+}
+.content li:nth-child(odd) {
+    float: left;
+    border-right: 1px dashed darkred;
+}
+.content li:nth-child(2n) {
+    float: right;
+    border-left: 1px dashed darkred;
+}
+.content li .user{
+    font-size: 14px;
+    font-weight: 800;
+}
+.content li .times{
+    color:#666;
+}
